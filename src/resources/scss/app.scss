@@ -1,0 +1,40 @@
+@import "variables";
+h1{
+  color: red;
+  background-color: rebeccapurple;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+
+  input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    width: 300px;
+    margin-right: 10px;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #3e8e41;
+    }
+  }
+}
