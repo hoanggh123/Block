@@ -1,5 +1,5 @@
-@import "variables";
-h1{
+@import 'variables';
+h1 {
   color: red;
   background-color: rebeccapurple;
 }
@@ -9,7 +9,7 @@ form {
   justify-content: center;
   margin: 20px;
 
-  input[type="text"] {
+  input[type='text'] {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -24,7 +24,7 @@ form {
     }
   }
 
-  input[type="submit"] {
+  input[type='submit'] {
     padding: 10px 20px;
     background-color: #4caf50;
     color: white;
