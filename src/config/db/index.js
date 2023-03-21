@@ -7,6 +7,5 @@ async function connect() {
   } catch (error) {
     console.log('Kết nối thất bại');
   }
-  
 }
 module.exports = { connect };

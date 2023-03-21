@@ -1,16 +1,12 @@
 const Course = require("../models/courses");
-
+const { muTipLeMongooseToObject } = require("../../util/mongoouse");
 class SiteController {
-  index(req, res) {
+  index(req, res, next) {
     Course.find({})
       .then((courses) => {
-        // Xử lý kết quả truy vấn và trả về cho client
-        res.json(courses);
+        res.render("home", { courses: muTipLeMongooseToObject(courses) });
       })
-      .catch((err) => {
-        // Xử lý lỗi và trả về một JSON object báo lỗi cho client
-        res.status(400).json({ error: "ERROR..!!!" });
-      });
+      .catch(next);
   }
   contact(req, res) {
     res.render("contact");
